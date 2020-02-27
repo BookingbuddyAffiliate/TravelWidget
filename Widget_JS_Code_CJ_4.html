@@ -81,7 +81,7 @@
        
 
         var query = document.URL.split('?')[1];
-        if (query != undefined) {
+        if (query != '') {
             var param = parseQueryString(query);
             rorig = param['orig'];
             rdest = param['dest'];
