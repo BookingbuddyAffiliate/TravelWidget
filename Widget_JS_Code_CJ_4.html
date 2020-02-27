@@ -81,17 +81,21 @@
        
 
         var query = document.URL.split('?')[1];
-        if (query != '') {
+        if (query != undefined) {
             var param = parseQueryString(query);
-            rorig = param['orig'];
-            rdest = param['dest'];
+            rorig = param['orig'].toUpperCase();
+            rdest = param['dest'].toUpperCase();
             cdepart = param['depart'];
             creturn = param['return'];
             adult = param['adult'];
             sourceid= param['sourceid']
             traqparam = param['traqparam'];
-            pid= param['pid'];
-
+        }
+        else if (getCookie('rorig') != undefined) {
+            rorig = getCookie('rorig');
+            rdest = getCookie('rdest');
+            cdepart = getCookie('rdepart');
+            creturn = getCookie('rreturn');
         }
 
         if (cdepart != null && cdepart != '') {
