@@ -83,13 +83,14 @@
         var query = document.URL.split('?')[1];
         if (query != undefined) {
             var param = parseQueryString(query);
-            rorig = param['orig'].toUpperCase();
-            rdest = param['dest'].toUpperCase();
+            rorig = param['orig'];
+            rdest = param['dest'];
             cdepart = param['depart'];
             creturn = param['return'];
             adult = param['adult'];
             sourceid= param['sourceid']
             traqparam = param['traqparam'];
+            pid= param['pid'];
         }
         else if (getCookie('rorig') != undefined) {
             rorig = getCookie('rorig');
@@ -133,8 +134,8 @@
           sc += '"placement_id": "-f_AwevGdDIV2v5Ht7Cao09DAGqD8g"';
           sc += '}';
         sc += '},';
-        sc += '"sub_2": "' + sourceid + '",';
-        sc += '"sub_3": "t~' + traqparam + '",';
+        sc += '"sub_2": "40185",';
+        sc += '"sub_3": "t~11449077-' + pid + '",';
         sc += '"data": {';
         sc += '"num_adults": ' + adult + ',';
         sc += '"flights": [{';
