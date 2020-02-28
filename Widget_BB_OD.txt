@@ -133,8 +133,8 @@
           sc += '"placement_id": "-f_AwevGdDIV2v5Ht7Cao09DAGqD8g"';
           sc += '}';
         sc += '},';
-        sc += '"sub_2": "40185",';
-        sc += '"sub_3": "t~13943058-' + pid + '",';
+        sc += '"sub_2": "source",';
+        sc += '"sub_3": "t~' + traqparam + '",';
         sc += '"data": {';
         sc += '"num_adults": ' + adult + ',';
         sc += '"flights": [{';
