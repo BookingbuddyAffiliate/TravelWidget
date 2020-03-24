@@ -137,7 +137,7 @@
           sc += '}';
         sc += '},';
         sc += '"sub_2": "'+ sourceid +'",';
-        sc += '"sub_3": "t~' + traqparam + '",';
+        sc += '"sub_3": "t~'+ traqparam +'",';
         sc += '"data": {';
         sc += '"num_adults": ' + adult + ',';
         sc += '"flights": [{';
