@@ -87,7 +87,7 @@
             cdepart = param['date1'];
             creturn = param['date2'];
             adult = param['adult'];
-            sourceid= param['sourceid']
+            sourceid= param['source']
             traqparam = param['traqparam'];
             pid= param['pid'];
         }
@@ -134,7 +134,7 @@
           sc += '}';
         sc += '},';
         sc += '"sub_2": "'+ sourceid +'",';
-        sc += '"sub_3": "t~' + traqparam + '",';
+        sc += '"sub_3": "t~'+ traqparam +'",';
         sc += '"data": {';
         sc += '"check_in_date": "' + rdepart + '",';
         sc += '"check_out_date": "' + rreturn + '",';
